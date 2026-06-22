@@ -1,0 +1,37 @@
+{
+  "name": "pi-dcp-stable",
+  "version": "0.1.0",
+  "description": "Stable Dynamic Context Pruning extension for pi, designed to avoid final-answer compression hijacking.",
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "dynamic-context-pruning",
+    "dcp",
+    "context"
+  ],
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lacoroze/pi-dcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lacoroze/pi-dcp/issues"
+  },
+  "homepage": "https://github.com/lacoroze/pi-dcp#readme",
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "pi": {
+    "extensions": [
+      "./src/index.ts"
+    ]
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "typebox": "*"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.2",
+    "typescript": "^6.0.3"
+  }
+}
